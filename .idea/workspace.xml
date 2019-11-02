@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9bc8441c-6bdc-4273-b935-51a0f0a1d938" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br.com.wb.tuples/Lookup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br.com.wb.tuples/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br.com.wb.tuples/ReadMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br.com.wb.tuples/WriteMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br.com.wb.tuples/Lookup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/wb/Lookup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br.com.wb.tuples/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/wb/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br.com.wb.tuples/ReadMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/wb/ReadMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br.com.wb.tuples/WriteMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/wb/WriteMessage.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,16 +16,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/br.com.wb.tuples/Lookup.java">
+        <entry file="file://$PROJECT_DIR$/src/br/com/wb/tuples/Lookup.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="25" selection-start-column="25" selection-end-column="25" />
+            <state relative-caret-position="380">
+              <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -34,31 +33,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/br.com.wb.tuples/Message.java">
+        <entry file="file://$PROJECT_DIR$/src/br/com/wb/tuples/Message.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="25" selection-start-column="25" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/br.com.wb.tuples/ReadMessage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="25" selection-start-column="25" selection-end-column="25" />
+            <state relative-caret-position="76">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/br.com.wb.tuples/WriteMessage.java">
+        <entry file="file://$PROJECT_DIR$/src/br/com/wb/services/ReadMessage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-57">
-              <caret column="25" selection-start-column="25" selection-end-column="25" />
+            <state relative-caret-position="209">
+              <caret line="23" column="8" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/br/com/wb/services/WriteMessage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="30" lean-forward="true" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -75,6 +74,7 @@
         <option value="$PROJECT_DIR$/src/br.com.wb.tuples/WriteMessage.java" />
         <option value="$PROJECT_DIR$/src/br.com.wb.tuples/Message.java" />
         <option value="$PROJECT_DIR$/src/br.com.wb.tuples/Lookup.java" />
+        <option value="$PROJECT_DIR$/src/br/com/wb/ReadMessage.java" />
       </list>
     </option>
   </component>
@@ -108,7 +108,7 @@
               <item name="Tuplas" type="b2602c69:ProjectViewProjectNode" />
               <item name="Tuplas" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="br.com.wb.tuples" type="462c0819:PsiDirectoryNode" />
+              <item name="wb" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -143,12 +143,12 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.ReadMessage">
-    <configuration name="ReadMessage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="br.com.wb.tuples.ReadMessage" />
+    <configuration name="ReadMessage" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.wb.services.ReadMessage" />
       <module name="Tuplas" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.com.wb.tuples.*" />
+          <option name="PATTERN" value="br.com.wb.services.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -169,9 +169,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WriteMessage" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.wb.services.WriteMessage" />
+      <module name="Tuplas" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.wb.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.ReadMessage" />
+      <item itemvalue="Application.WriteMessage" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.ReadMessage" />
+        <item itemvalue="Application.WriteMessage" />
         <item itemvalue="Application.WriteMessage" />
       </list>
     </recent_temporary>
@@ -186,12 +204,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1572644486148</updated>
-      <workItem from="1572644492953" duration="2481000" />
+      <workItem from="1572644492953" duration="2549000" />
+      <workItem from="1572702484285" duration="1511000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2481000" />
+    <option name="totallyTimeSpent" value="4060000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -202,21 +221,21 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.24961948" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.2541857" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.32881355" />
       <window_info anchor="bottom" id="Database Changes" order="2" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="5" />
-      <window_info anchor="bottom" id="Find" order="6" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.32881355" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.32881355" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.32881355" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="11" />
+      <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Theme Preview" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Palette&#9;" order="2" />
@@ -235,34 +254,34 @@
     <entry file="file://$PROJECT_DIR$/Tuplas.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/br.com.wb.tuples/ReadMessage.java">
+    <entry file="file://$PROJECT_DIR$/src/br/com/wb/services/WriteMessage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="25" selection-start-column="25" selection-end-column="25" />
+        <state relative-caret-position="38">
+          <caret line="2" column="30" lean-forward="true" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/br.com.wb.tuples/Message.java">
+    <entry file="file://$PROJECT_DIR$/src/br/com/wb/tuples/Message.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="25" selection-start-column="25" selection-end-column="25" />
+        <state relative-caret-position="76">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/br.com.wb.tuples/Lookup.java">
+    <entry file="file://$PROJECT_DIR$/src/br/com/wb/tuples/Lookup.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="25" selection-start-column="25" selection-end-column="25" />
+        <state relative-caret-position="380">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/br.com.wb.tuples/WriteMessage.java">
+    <entry file="file://$PROJECT_DIR$/src/br/com/wb/services/ReadMessage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-57">
-          <caret column="25" selection-start-column="25" selection-end-column="25" />
+        <state relative-caret-position="209">
+          <caret line="23" column="8" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

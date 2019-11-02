@@ -1,10 +1,8 @@
-package br.com.wb.tuples;
+package br.com.wb.services;
 
+import br.com.wb.tuples.Lookup;
+import br.com.wb.tuples.Message;
 import net.jini.space.JavaSpace;
-
-//http://www.inf.ufsc.br/~frank/INE5418/JavaSpaces/
-//http://www.oracle.com/technetwork/articles/java/javaspaces-140665.html
-//http://www.artima.com/javaseminars/modules/JavaSpaces/
 
 public class ReadMessage {
 

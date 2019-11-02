@@ -24,7 +24,7 @@ import net.jini.discovery.DiscoveryEvent;
  @author  Dan Creswell (dan@dancres.org)
  @version 1.00, 7/9/2003
  */
-class Lookup implements DiscoveryListener {
+public class Lookup implements DiscoveryListener {
     private ServiceTemplate theTemplate;
     private LookupDiscovery theDiscoverer;
 
@@ -34,7 +34,7 @@ class Lookup implements DiscoveryListener {
      @param aServiceInterface the class of the type of service you are
      looking for.  Class is usually an interface class.
      */
-    Lookup(Class aServiceInterface) {
+    public Lookup(Class aServiceInterface) {
         Class[] myServiceTypes = new Class[] {aServiceInterface};
         theTemplate = new ServiceTemplate(null, myServiceTypes, null);
     }
@@ -48,7 +48,7 @@ class Lookup implements DiscoveryListener {
      @return proxy for the service type you requested - could be an rmi
      stub or an intelligent proxy.
      */
-    Object getService() {
+    public Object getService() {
         synchronized(this) {
             if (theDiscoverer == null) {
 

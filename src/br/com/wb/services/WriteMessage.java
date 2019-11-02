@@ -1,5 +1,7 @@
-package br.com.wb.tuples;
+package br.com.wb.services;
 
+import br.com.wb.tuples.Lookup;
+import br.com.wb.tuples.Message;
 import net.jini.space.JavaSpace;
 import java.util.Scanner;
 
