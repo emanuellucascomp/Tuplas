@@ -5,7 +5,7 @@ import net.jini.core.entry.Entry;
 public class Dispositive implements Entry {
 
     public String name;
-    public String type;
+    public String type = "Dispositive";
 
     public Dispositive(){ }
 }
