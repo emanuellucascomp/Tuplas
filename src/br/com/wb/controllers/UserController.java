@@ -19,7 +19,10 @@ public class UserController {
 
     public void retrieveUser(String user){
         this.user = this.service.getUserBy(user);
-        System.out.println(user);
+        if(this.user!= null){
+            System.out.println(user);
+        }
+        System.out.println("Not found");
     }
 
     public void writeUser(String name){
