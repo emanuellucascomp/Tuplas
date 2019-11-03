@@ -6,6 +6,7 @@ public class Dispositive implements Entry {
 
     public String type;
     public String name;
+    public String environment;
 
     public Dispositive(){ }
 }

@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9bc8441c-6bdc-4273-b935-51a0f0a1d938" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/br/com/wb/controllers/DispositiveController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/wb/controllers/EnvironmentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/wb/services/DispositiveService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/wb/services/EnvironmentService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/com/wb/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/wb/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/com/wb/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/wb/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/wb/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/wb/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/wb/tuples/Dispositive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/wb/tuples/Dispositive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/wb/tuples/Environment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/wb/tuples/Environment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/wb/tuples/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/wb/tuples/User.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,8 +29,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/br/com/wb/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="34" column="36" lean-forward="true" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+            <state relative-caret-position="285">
+              <caret line="80" column="26" lean-forward="true" selection-start-line="80" selection-start-column="26" selection-end-line="80" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/br/com/wb/controllers/EnvironmentController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -31,34 +48,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/br/com/wb/controllers/UserController.java">
+        <entry file="file://$PROJECT_DIR$/src/br/com/wb/services/EnvironmentService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+            <state relative-caret-position="-152">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/br/com/wb/services/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="41">
-              <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/br/com/wb/tuples/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -84,12 +80,16 @@
         <option value="$PROJECT_DIR$/src/br.com.wb.tuples/Lookup.java" />
         <option value="$PROJECT_DIR$/src/br/com/wb/ReadMessage.java" />
         <option value="$PROJECT_DIR$/src/br/com/wb/services/ReadMessage.java" />
-        <option value="$PROJECT_DIR$/src/br/com/wb/tuples/Environment.java" />
         <option value="$PROJECT_DIR$/src/br/com/wb/tuples/User.java" />
         <option value="$PROJECT_DIR$/src/br/com/wb/tuples/Dispositive.java" />
         <option value="$PROJECT_DIR$/src/br/com/wb/services/UserService.java" />
-        <option value="$PROJECT_DIR$/src/br/com/wb/Main.java" />
+        <option value="$PROJECT_DIR$/src/br/com/wb/controllers/DispositiveController.java" />
         <option value="$PROJECT_DIR$/src/br/com/wb/controllers/UserController.java" />
+        <option value="$PROJECT_DIR$/src/br/com/wb/services/DispositiveService.java" />
+        <option value="$PROJECT_DIR$/src/br/com/wb/services/EnvironmentService.java" />
+        <option value="$PROJECT_DIR$/src/br/com/wb/tuples/Environment.java" />
+        <option value="$PROJECT_DIR$/src/br/com/wb/controllers/EnvironmentController.java" />
+        <option value="$PROJECT_DIR$/src/br/com/wb/Main.java" />
       </list>
     </option>
   </component>
@@ -140,13 +140,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="wb" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tuplas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tuplas" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="wb" type="462c0819:PsiDirectoryNode" />
-              <item name="tuples" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -255,23 +248,22 @@
       <updated>1572644486148</updated>
       <workItem from="1572644492953" duration="2549000" />
       <workItem from="1572702484285" duration="4314000" />
-      <workItem from="1572783624691" duration="5368000" />
+      <workItem from="1572783624691" duration="12728000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12231000" />
+    <option name="totallyTimeSpent" value="19591000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.19863014" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.19863014" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.32881355" />
@@ -305,15 +297,9 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/br/com/wb/controllers/UserController.java</url>
-          <line>28</line>
+          <line>29</line>
           <properties />
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/br/com/wb/services/UserService.java</url>
-          <line>33</line>
-          <properties />
-          <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/br/com/wb/controllers/UserController.java</url>
@@ -332,6 +318,16 @@
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>user</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>returnedUser</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>returnedUsers</expression-string>
         <language-id>JAVA</language-id>
@@ -357,40 +353,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/wb/tuples/Dispositive.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/wb/tuples/Environment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/wb/tuples/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/wb/services/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/wb/services/WriteMessage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
@@ -400,15 +362,83 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/wb/services/ReadMessage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
+        <state relative-caret-position="56">
           <caret line="23" column="67" lean-forward="true" selection-start-line="23" selection-start-column="67" selection-end-line="23" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/wb/tuples/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/wb/tuples/Dispositive.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/wb/controllers/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
-          <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+          <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/wb/services/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="48" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/wb/services/DispositiveService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="45" column="9" lean-forward="true" selection-start-line="30" selection-start-column="8" selection-end-line="45" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/wb/controllers/DispositiveController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="27" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/wb/controllers/EnvironmentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/wb/tuples/Environment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/wb/services/EnvironmentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-152">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -417,11 +447,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/wb/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="34" column="36" lean-forward="true" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="285">
+          <caret line="80" column="26" lean-forward="true" selection-start-line="80" selection-start-column="26" selection-end-line="80" selection-end-column="26" />
         </state>
       </provider>
     </entry>

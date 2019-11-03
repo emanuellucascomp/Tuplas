@@ -1,28 +1,25 @@
 package br.com.wb.services;
 
+import br.com.wb.tuples.Dispositive;
 import br.com.wb.tuples.Lookup;
-import br.com.wb.tuples.Message;
-import br.com.wb.tuples.User;
 import net.jini.core.transaction.TransactionException;
 import net.jini.space.JavaSpace;
 
 import java.rmi.RemoteException;
-import java.util.List;
-import java.util.Scanner;
 
-public class UserService {
+public class DispositiveService {
 
-    public User getUserBy(String user) {
+    public Dispositive getDispositiveBy(String name){
         try {
             Lookup finder = new Lookup(JavaSpace.class);
             JavaSpace space = (JavaSpace) finder.getService();
             if (space == null) {
                 System.exit(-1);
             }
-            User template = new User();
-            template.name = user;
-            User returnedUser = (User) space.read(template, null, 60 * 1000);
-            return returnedUser;
+            Dispositive template = new Dispositive();
+            template.name = name;
+            Dispositive returnedDispositive = (Dispositive) space.read(template, null, 60 * 1000);
+            return returnedDispositive;
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -30,18 +27,18 @@ public class UserService {
         return null;
     }
 
-    public void writeUser(String name, String environment) {
+    public void writeDispositive(String name, String environment) {
         try {
             Lookup finder = new Lookup(JavaSpace.class);
             JavaSpace space = (JavaSpace) finder.getService();
             if (space == null) {
                 System.exit(-1);
             }
-            User user = new User();
-            user.type = "User";
-            user.name = name;
-            user.environment = environment;
-            space.write(user, null, 60 * 1000);
+            Dispositive dispositive = new Dispositive();
+            dispositive.type = "Dispositive";
+            dispositive.name = name;
+            dispositive.environment = environment;
+            space.write(dispositive, null, 60 * 1000);
         } catch (TransactionException e) {
             e.printStackTrace();
         } catch (RemoteException e) {

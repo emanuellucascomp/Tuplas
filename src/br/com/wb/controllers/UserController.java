@@ -20,13 +20,14 @@ public class UserController {
     public void retrieveUser(String user){
         this.user = this.service.getUserBy(user);
         if(this.user!= null){
-            System.out.println(user);
+            System.out.println("User: " + this.user.name + " / Environment: " + this.user.environment);
+        } else {
+            System.out.println("Não achado");
         }
-        System.out.println("Not found");
     }
 
-    public void writeUser(String name){
-        this.service.writeUser(name);
+    public void writeUser(String name, String environment){
+        this.service.writeUser(name, environment);
         System.out.println("Usuário escrito");
     }
 

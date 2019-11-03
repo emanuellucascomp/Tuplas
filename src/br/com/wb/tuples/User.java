@@ -6,6 +6,7 @@ public class User implements Entry {
 
     public String type;
     public String name;
+    public String environment;
 
     public User(){ }
 }
