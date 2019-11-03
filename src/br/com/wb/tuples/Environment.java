@@ -8,8 +8,8 @@ public class Environment implements Entry {
 
     public String name;
     public String type;
-    public List<User> users;
-    public List<Dispositive> dispositives;
+    public String user;
+    public String dispositive;
 
     public Environment(){ }
 }
