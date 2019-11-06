@@ -30,7 +30,28 @@ public class UserService {
         return null;
     }
 
+    public User getUserByEnvironment(String name, String amb) {
+        try {
+            Lookup finder = new Lookup(JavaSpace.class);
+            JavaSpace space = (JavaSpace) finder.getService();
+            if (space == null) {
+                System.exit(-1);
+            }
+            User template = new User();
+            template.environment = amb;
+            template.name = name;
+            User returnedUser = (User) space.take(template, null, 60 * 1000);
+            return returnedUser;
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
     public void writeUser(String name, String environment) {
+        //TODO checar se já existe o usuário naquele ambiente
+        //TODO checar se o usuário já está em algum ambiente
         try {
             Lookup finder = new Lookup(JavaSpace.class);
             JavaSpace space = (JavaSpace) finder.getService();

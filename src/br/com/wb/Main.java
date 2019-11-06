@@ -25,8 +25,11 @@ public class Main {
         System.out.println("|  4. Buscar dispositivo       |");
         System.out.println("|  5. Inserir ambiente         |");
         System.out.println("|  6. Buscar ambiente          |");
-        System.out.println("|  7. Listar ambientes          |");
-        System.out.println("|  7. Sair                     |");
+        System.out.println("|  7. Listar dispositivos      |");
+        System.out.println("|  8. Mover dispositivo        |");
+        System.out.println("|  9. Listar usuários          |");
+        System.out.println("|  10. Mover usuário           |");
+        System.out.println("|  11. Sair                    |");
         System.out.println("================================");
         System.out.println("Selecionar opção: ");
         while(true){
@@ -82,10 +85,20 @@ public class Main {
                     System.out.println("Selecionar opção: ");
                     break;
                 case 7:
-                    environmentController.listAllEnvironments();
+                    System.out.println("Inserir nome do ambiente: ");
+                    Scanner en = new Scanner( System.in );
+                    String rr = en.nextLine();
+                    environmentController.listDispositiveByEnvironment(rr);
                     System.out.println("Selecionar opção: ");
                     break;
-                case 8:
+                case 9:
+                    System.out.println("Inserir nome do ambiente: ");
+                    Scanner d = new Scanner( System.in );
+                    String dn = d.nextLine();
+                    environmentController.listUserByEnvironment(dn);
+                    System.out.println("Selecionar opção: ");
+                    break;
+                case 11:
                     System.out.println("Exit selected");
                     System.exit(0);
                 default:

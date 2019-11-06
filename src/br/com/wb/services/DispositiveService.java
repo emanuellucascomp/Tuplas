@@ -27,7 +27,28 @@ public class DispositiveService {
         return null;
     }
 
+    public Dispositive getDispositiveByEnvironment(String name, String from){
+        try {
+            Lookup finder = new Lookup(JavaSpace.class);
+            JavaSpace space = (JavaSpace) finder.getService();
+            if (space == null) {
+                System.exit(-1);
+            }
+            Dispositive template = new Dispositive();
+            template.name = name;
+            template.environment = from;
+            Dispositive returnedDispositive = (Dispositive) space.take(template, null, 60 * 1000);
+            return returnedDispositive;
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
     public void writeDispositive(String name, String environment) {
+        //TODO checar se já existe o dispositivo naquele ambiente
+        //TODO checar se o dispositivo já está em algum ambiente
         try {
             Lookup finder = new Lookup(JavaSpace.class);
             JavaSpace space = (JavaSpace) finder.getService();

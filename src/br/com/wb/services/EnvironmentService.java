@@ -1,7 +1,9 @@
 package br.com.wb.services;
 
+import br.com.wb.tuples.Dispositive;
 import br.com.wb.tuples.Environment;
 import br.com.wb.tuples.Lookup;
+import br.com.wb.tuples.User;
 import net.jini.core.entry.Entry;
 import net.jini.core.entry.UnusableEntryException;
 import net.jini.core.transaction.TransactionException;
@@ -51,7 +53,7 @@ public class EnvironmentService {
     }
 
     public List<Environment> listAllEnvironments() throws ServiceUnavailableException {
-        List<Environment> list = new LinkedList<Environment>();
+        List<Environment> list = new LinkedList<>();
 
         Environment env = null;
         Environment template = new Environment();
@@ -61,6 +63,52 @@ public class EnvironmentService {
         } while (env != null);
 
         return list;
+    }
+
+    public List<Dispositive> listDispositiveByEnvironment(String dispositive) throws ServiceUnavailableException  {
+        List<Dispositive> list = new LinkedList<>();
+
+        Dispositive env = null;
+        Dispositive template = new Dispositive();
+        template.name = dispositive;
+        do{
+            env = (Dispositive) this.take(template);
+            if(env != null) list.add(env);
+        } while (env != null);
+
+        return list;
+    }
+
+    public List<User> listUserByEnvironment(String usr) throws ServiceUnavailableException  {
+        List<User> list = new LinkedList<>();
+
+        User env = null;
+        User template = new User();
+        template.name = usr;
+        do{
+            env = (User) this.take(template);
+            if(env != null) list.add(env);
+        } while (env != null);
+
+        return list;
+    }
+
+    public void moveUser(String name, String from, String to){
+        UserService service = new UserService();
+        User user = service.getUserByEnvironment(name, from);
+        if(user != null){
+            service.writeUser(user.name, to);
+            System.out.println("Usuário movido");
+        }
+    }
+
+    public void moveDispositive(String name, String from, String to){
+        DispositiveService service = new DispositiveService();
+        Dispositive dispositive = service.getDispositiveByEnvironment(name, from);
+        if(dispositive != null){
+            service.writeDispositive(dispositive.name, to);
+            System.out.println("Dispositivo movido");
+        }
     }
 
     public Entry take(Entry template) throws ServiceUnavailableException {
@@ -78,4 +126,6 @@ public class EnvironmentService {
         }
         return entry;
     }
+
+
 }
