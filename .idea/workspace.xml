@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9bc8441c-6bdc-4273-b935-51a0f0a1d938" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/br/com/wb/controllers/DispositiveController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/wb/controllers/EnvironmentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/wb/services/DispositiveService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/wb/services/EnvironmentService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/wb/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/wb/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/wb/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/wb/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/wb/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/wb/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/wb/tuples/Dispositive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/wb/tuples/Dispositive.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/wb/tuples/Environment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/wb/tuples/Environment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/wb/tuples/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/wb/tuples/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/wb/controllers/EnvironmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/wb/controllers/EnvironmentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/wb/services/EnvironmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/wb/services/EnvironmentService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,20 +18,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/br/com/wb/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="80" column="26" lean-forward="true" selection-start-line="80" selection-start-column="26" selection-end-line="80" selection-end-column="26" />
+            <state relative-caret-position="1292">
+              <caret line="80" column="26" selection-start-line="80" selection-start-column="26" selection-end-line="80" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/br/com/wb/controllers/EnvironmentController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+            <state relative-caret-position="437">
+              <caret line="36" column="64" selection-start-line="36" selection-start-column="64" selection-end-line="36" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -50,10 +42,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/br/com/wb/services/EnvironmentService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-152">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="247">
+              <caret line="61" selection-start-line="61" selection-end-line="61" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1629#1642#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -86,10 +78,10 @@
         <option value="$PROJECT_DIR$/src/br/com/wb/controllers/DispositiveController.java" />
         <option value="$PROJECT_DIR$/src/br/com/wb/controllers/UserController.java" />
         <option value="$PROJECT_DIR$/src/br/com/wb/services/DispositiveService.java" />
-        <option value="$PROJECT_DIR$/src/br/com/wb/services/EnvironmentService.java" />
         <option value="$PROJECT_DIR$/src/br/com/wb/tuples/Environment.java" />
-        <option value="$PROJECT_DIR$/src/br/com/wb/controllers/EnvironmentController.java" />
         <option value="$PROJECT_DIR$/src/br/com/wb/Main.java" />
+        <option value="$PROJECT_DIR$/src/br/com/wb/services/EnvironmentService.java" />
+        <option value="$PROJECT_DIR$/src/br/com/wb/controllers/EnvironmentController.java" />
       </list>
     </option>
   </component>
@@ -107,7 +99,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -145,6 +136,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -248,22 +240,25 @@
       <updated>1572644486148</updated>
       <workItem from="1572644492953" duration="2549000" />
       <workItem from="1572702484285" duration="4314000" />
-      <workItem from="1572783624691" duration="12728000" />
+      <workItem from="1572783624691" duration="14139000" />
+      <workItem from="1572913979005" duration="639000" />
+      <workItem from="1572999837919" duration="2553000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19591000" />
+    <option name="totallyTimeSpent" value="24194000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.19863014" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.20624049" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.32881355" />
@@ -418,16 +413,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/wb/controllers/EnvironmentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/wb/tuples/Environment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
@@ -435,20 +420,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/wb/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1292">
+          <caret line="80" column="26" selection-start-line="80" selection-start-column="26" selection-end-line="80" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/wb/services/EnvironmentService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-152">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="247">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1629#1642#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/wb/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/br/com/wb/controllers/EnvironmentController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="80" column="26" lean-forward="true" selection-start-line="80" selection-start-column="26" selection-end-line="80" selection-end-column="26" />
+        <state relative-caret-position="437">
+          <caret line="36" column="64" selection-start-line="36" selection-start-column="64" selection-end-line="36" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -4,10 +4,11 @@ import br.com.wb.controllers.DispositiveController;
 import br.com.wb.controllers.EnvironmentController;
 import br.com.wb.controllers.UserController;
 
+import javax.naming.ServiceUnavailableException;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ServiceUnavailableException {
 
         int option;
         UserController controller = new UserController();
@@ -24,6 +25,7 @@ public class Main {
         System.out.println("|  4. Buscar dispositivo       |");
         System.out.println("|  5. Inserir ambiente         |");
         System.out.println("|  6. Buscar ambiente          |");
+        System.out.println("|  7. Listar ambientes          |");
         System.out.println("|  7. Sair                     |");
         System.out.println("================================");
         System.out.println("Selecionar opção: ");
@@ -80,6 +82,10 @@ public class Main {
                     System.out.println("Selecionar opção: ");
                     break;
                 case 7:
+                    environmentController.listAllEnvironments();
+                    System.out.println("Selecionar opção: ");
+                    break;
+                case 8:
                     System.out.println("Exit selected");
                     System.exit(0);
                 default:
