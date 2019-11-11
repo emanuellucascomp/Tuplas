@@ -18,25 +18,6 @@ public class DispositiveService {
             }
             Dispositive template = new Dispositive();
             template.name = name;
-            Dispositive returnedDispositive = (Dispositive) space.read(template, null, 60 * 1000);
-            return returnedDispositive;
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return null;
-    }
-
-    public Dispositive getDispositiveByEnvironment(String name, String from){
-        try {
-            Lookup finder = new Lookup(JavaSpace.class);
-            JavaSpace space = (JavaSpace) finder.getService();
-            if (space == null) {
-                System.exit(-1);
-            }
-            Dispositive template = new Dispositive();
-            template.name = name;
-            template.environment = from;
             Dispositive returnedDispositive = (Dispositive) space.take(template, null, 60 * 1000);
             return returnedDispositive;
 

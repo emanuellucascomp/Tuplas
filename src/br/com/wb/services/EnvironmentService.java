@@ -93,18 +93,18 @@ public class EnvironmentService {
         return list;
     }
 
-    public void moveUser(String name, String from, String to){
+    public void moveUser(String name, String to){
         UserService service = new UserService();
-        User user = service.getUserByEnvironment(name, from);
+        User user = service.getUserBy(name);
         if(user != null){
             service.writeUser(user.name, to);
             System.out.println("Usuário movido");
         }
     }
 
-    public void moveDispositive(String name, String from, String to){
+    public void moveDispositive(String name, String to){
         DispositiveService service = new DispositiveService();
-        Dispositive dispositive = service.getDispositiveByEnvironment(name, from);
+        Dispositive dispositive = service.getDispositiveBy(name);
         if(dispositive != null){
             service.writeDispositive(dispositive.name, to);
             System.out.println("Dispositivo movido");

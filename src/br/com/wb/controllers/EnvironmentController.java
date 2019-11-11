@@ -61,11 +61,15 @@ public class EnvironmentController {
         System.out.println("Usuários retornados");
     }
 
-    public void moveUser(String name, String from, String to){
-        this.service.moveUser(name, from, to);
+    public void moveUser(String name, String to){
+        this.service.moveUser(name, to);
     }
 
-    public void moveDispositive(String name, String from, String to){
-        this.service.moveDispositive(name, from, to);
+    public void moveDispositive(String name, String to){
+        this.service.moveDispositive(name, to);
+    }
+
+    public void startChat(String userChat) {
+
     }
 }
