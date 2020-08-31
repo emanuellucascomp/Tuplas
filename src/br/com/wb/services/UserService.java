@@ -1,14 +1,11 @@
 package br.com.wb.services;
 
 import br.com.wb.tuples.Lookup;
-import br.com.wb.tuples.Message;
 import br.com.wb.tuples.User;
 import net.jini.core.transaction.TransactionException;
 import net.jini.space.JavaSpace;
 
 import java.rmi.RemoteException;
-import java.util.List;
-import java.util.Scanner;
 
 public class UserService {
 
@@ -38,7 +35,7 @@ public class UserService {
                 System.exit(-1);
             }
             User template = new User();
-            template.environment = amb;
+            template.chatRoom = amb;
             template.name = name;
             User returnedUser = (User) space.take(template, null, 60 * 1000);
             return returnedUser;
@@ -49,7 +46,7 @@ public class UserService {
         return null;
     }
 
-    public void writeUser(String name, String environment) {
+    public void writeUser(String name, String chatRoom) {
         //TODO checar se já existe o usuário naquele ambiente
         //TODO checar se o usuário já está em algum ambiente
         try {
@@ -61,7 +58,7 @@ public class UserService {
             User user = new User();
             user.type = "User";
             user.name = name;
-            user.environment = environment;
+            user.chatRoom = chatRoom;
             space.write(user, null, 60 * 1000);
         } catch (TransactionException e) {
             e.printStackTrace();

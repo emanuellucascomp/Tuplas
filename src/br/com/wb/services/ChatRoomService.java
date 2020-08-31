@@ -1,7 +1,6 @@
 package br.com.wb.services;
 
-import br.com.wb.tuples.Dispositive;
-import br.com.wb.tuples.Environment;
+import br.com.wb.tuples.ChatRoom;
 import br.com.wb.tuples.Lookup;
 import br.com.wb.tuples.User;
 import net.jini.core.entry.Entry;
@@ -14,19 +13,19 @@ import java.rmi.RemoteException;
 import java.util.LinkedList;
 import java.util.List;
 
-public class EnvironmentService {
+public class ChatRoomService {
 
-    public Environment getEnvironmentBy(String name) {
+    public ChatRoom getEnvironmentBy(String name) {
         try {
             Lookup finder = new Lookup(JavaSpace.class);
             JavaSpace space = (JavaSpace) finder.getService();
             if (space == null) {
                 System.exit(-1);
             }
-            Environment template = new Environment();
+            ChatRoom template = new ChatRoom();
             template.name = name;
-            Environment returnedEnvironment = (Environment) space.read(template, null, 60 * 1000);
-            return returnedEnvironment;
+            ChatRoom returnedChatRoom = (ChatRoom) space.read(template, null, 60 * 1000);
+            return returnedChatRoom;
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -41,10 +40,10 @@ public class EnvironmentService {
             if (space == null) {
                 System.exit(-1);
             }
-            Environment environment = new Environment();
-            environment.type = "Environment";
-            environment.name = name;
-            space.write(environment, null, 60 * 1000);
+            ChatRoom chatRoom = new ChatRoom();
+            chatRoom.type = "ChatRoom";
+            chatRoom.name = name;
+            space.write(chatRoom, null, 60 * 1000);
         } catch (TransactionException e) {
             e.printStackTrace();
         } catch (RemoteException e) {
@@ -52,27 +51,13 @@ public class EnvironmentService {
         }
     }
 
-    public List<Environment> listAllEnvironments() throws ServiceUnavailableException {
-        List<Environment> list = new LinkedList<>();
+    public List<ChatRoom> listAllEnvironments() throws ServiceUnavailableException {
+        List<ChatRoom> list = new LinkedList<>();
 
-        Environment env = null;
-        Environment template = new Environment();
+        ChatRoom env = null;
+        ChatRoom template = new ChatRoom();
         do{
-            env = (Environment) this.take(template);
-            if(env != null) list.add(env);
-        } while (env != null);
-
-        return list;
-    }
-
-    public List<Dispositive> listDispositiveByEnvironment(String dispositive) throws ServiceUnavailableException  {
-        List<Dispositive> list = new LinkedList<>();
-
-        Dispositive env = null;
-        Dispositive template = new Dispositive();
-        template.name = dispositive;
-        do{
-            env = (Dispositive) this.take(template);
+            env = (ChatRoom) this.take(template);
             if(env != null) list.add(env);
         } while (env != null);
 
@@ -102,14 +87,6 @@ public class EnvironmentService {
         }
     }
 
-    public void moveDispositive(String name, String to){
-        DispositiveService service = new DispositiveService();
-        Dispositive dispositive = service.getDispositiveBy(name);
-        if(dispositive != null){
-            service.writeDispositive(dispositive.name, to);
-            System.out.println("Dispositivo movido");
-        }
-    }
 
     public Entry take(Entry template) throws ServiceUnavailableException {
         Entry entry = null;

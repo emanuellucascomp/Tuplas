@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="jsk-lib">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/JavaSpaceExample/lib/jsk-lib.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
