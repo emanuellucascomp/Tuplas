@@ -1,6 +1,7 @@
 package br.com.wb;
 
 import br.com.wb.controllers.ChatRoomController;
+import br.com.wb.controllers.MessageController;
 import br.com.wb.controllers.UserController;
 
 import javax.naming.ServiceUnavailableException;
@@ -12,18 +13,20 @@ public class Main {
         int option;
         UserController controller = new UserController();
         ChatRoomController chatRoomController = new ChatRoomController();
+        MessageController messageController = new MessageController();
 
         System.out.println("================================");
-        System.out.println(" |Projeto - Espaço de Tuplas|   ");
+        System.out.println("  |Projeto - Espaço de Tuplas|  ");
         System.out.println("================================");
         System.out.println("| Options:                     |");
         System.out.println("|  1. Inserir usuário          |");
         System.out.println("|  2. Buscar usuário           |");
+        System.out.println("|  3. Mensagem direta          |");
+        System.out.println("|  4. Mensagem no canal        |");
         System.out.println("|  5. Inserir sala             |");
         System.out.println("|  6. Buscar sala              |");
         System.out.println("|  9. Listar usuários          |");
         System.out.println("|  10. Mover usuário           |");
-        System.out.println("|  11. Chat                    |");
         System.out.println("|  12. Sair                    |");
         System.out.println("================================");
         System.out.println("Selecionar opção: ");
@@ -35,7 +38,7 @@ public class Main {
                     System.out.println("Inserir nome do usário: ");
                     Scanner nameInsertInput = new Scanner( System.in );
                     String userInsertName = nameInsertInput.nextLine();
-                    System.out.println("Inserir nome do ambiente: ");
+                    System.out.println("Inserir nome da sala: ");
                     Scanner environmentInsertInput = new Scanner( System.in );
                     String environmentInsertName = environmentInsertInput.nextLine();
                     controller.writeUser(userInsertName, environmentInsertName);
@@ -48,42 +51,58 @@ public class Main {
                     controller.retrieveUser(userRetrieveName);
                     System.out.println("Selecionar opção: ");
                     break;
+                case 3:
+                    System.out.println("Inserir nome do remetente: ");
+                    Scanner remetente = new Scanner( System.in );
+                    String from = remetente.nextLine();
+                    System.out.println("Inserir nome do destinatário: ");
+                    Scanner destinatario = new Scanner( System.in );
+                    String to = destinatario.nextLine();
+                    System.out.println("Inserir mensagem: ");
+                    Scanner mensagem = new Scanner( System.in );
+                    String content = mensagem.nextLine();
+                    messageController.writeMessage(from, to, false, content);
+                    System.out.println("Selecionar opção: ");
+                    break;
+                case 4:
+                    System.out.println("Inserir nome do remetente: ");
+                    Scanner re = new Scanner( System.in );
+                    String userFrom = re.nextLine();
+                    System.out.println("Inserir mensagem: ");
+                    Scanner msg = new Scanner( System.in );
+                    String message = msg.nextLine();
+                    messageController.writeMessage(userFrom, null, true, message);
+                    System.out.println("Selecionar opção: ");
+                    break;
                 case 5:
-                    System.out.println("Inserir nome do ambiente: ");
+                    System.out.println("Inserir nome da sala: ");
                     Scanner environment = new Scanner( System.in );
                     String insertEnvironmentName = environment.nextLine();
-                    chatRoomController.writeEnvironment(insertEnvironmentName);
+                    chatRoomController.writeRoom(insertEnvironmentName);
                     System.out.println("Selecionar opção: ");
                     break;
                 case 6:
-                    System.out.println("Inserir nome do ambiente: ");
+                    System.out.println("Inserir nome da sala: ");
                     Scanner e = new Scanner( System.in );
                     String r = e.nextLine();
-                    chatRoomController.retrieveEnvironment(r);
+                    chatRoomController.retrieveRoom(r);
                     System.out.println("Selecionar opção: ");
                     break;
                 case 9:
-                    System.out.println("Inserir nome do ambiente: ");
+                    System.out.println("Inserir nome da sala: ");
                     Scanner d = new Scanner( System.in );
                     String dn = d.nextLine();
-                    chatRoomController.listUserByEnvironment(dn);
+                    chatRoomController.listUserByRoom(dn);
                     System.out.println("Selecionar opção: ");
                     break;
                 case 10:
                     System.out.println("Inserir nome do usuário: ");
                     Scanner s = new Scanner( System.in );
                     String st = s.nextLine();
-                    System.out.println("Inserir nome do ambiente: ");
+                    System.out.println("Inserir nome da sala: ");
                     Scanner am = new Scanner( System.in );
                     String a = am.nextLine();
                     chatRoomController.moveUser(st, a);
-                    System.out.println("Selecionar opção: ");
-                    break;
-                case 11:
-                    System.out.println("Inserir nome do usuário: ");
-                    Scanner uc = new Scanner( System.in );
-                    String userChat = uc.nextLine();
-                    chatRoomController.startChat(userChat);
                     System.out.println("Selecionar opção: ");
                     break;
                 case 12:

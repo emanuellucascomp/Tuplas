@@ -15,7 +15,7 @@ import java.util.List;
 
 public class ChatRoomService {
 
-    public ChatRoom getEnvironmentBy(String name) {
+    public ChatRoom getRoomBy(String name) {
         try {
             Lookup finder = new Lookup(JavaSpace.class);
             JavaSpace space = (JavaSpace) finder.getService();
@@ -33,7 +33,7 @@ public class ChatRoomService {
         return null;
     }
 
-    public void writeEnvironment(String name) {
+    public void writeRoom(String name) {
         try {
             Lookup finder = new Lookup(JavaSpace.class);
             JavaSpace space = (JavaSpace) finder.getService();
@@ -51,7 +51,7 @@ public class ChatRoomService {
         }
     }
 
-    public List<ChatRoom> listAllEnvironments() throws ServiceUnavailableException {
+    public List<ChatRoom> listAllRooms() throws ServiceUnavailableException {
         List<ChatRoom> list = new LinkedList<>();
 
         ChatRoom env = null;
@@ -64,12 +64,12 @@ public class ChatRoomService {
         return list;
     }
 
-    public List<User> listUserByEnvironment(String usr) throws ServiceUnavailableException  {
+    public List<User> listUsersByRoom(String chatRoom) throws ServiceUnavailableException  {
         List<User> list = new LinkedList<>();
 
         User env = null;
         User template = new User();
-        template.name = usr;
+        template.chatRoom = chatRoom;
         do{
             env = (User) this.take(template);
             if(env != null) list.add(env);

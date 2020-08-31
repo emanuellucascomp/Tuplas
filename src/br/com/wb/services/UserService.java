@@ -27,7 +27,7 @@ public class UserService {
         return null;
     }
 
-    public User getUserByEnvironment(String name, String amb) {
+    public User getUserByRoom(String name, String amb) {
         try {
             Lookup finder = new Lookup(JavaSpace.class);
             JavaSpace space = (JavaSpace) finder.getService();
